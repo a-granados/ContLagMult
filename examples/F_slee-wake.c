@@ -1,6 +1,10 @@
 
 #include <math.h>
 
+//This function reproduces the example given [1], a sleep-wake system. It is used to compute a slow manifold given by equilibrium
+//points of a 2D system parameterized by a parameter (slow varible).
+//
+//[1]: Physiologically-based modeling of sleep–wake regulatory networks. Victoria Booth and Cecilia G. Diniz Behn. Mathematical Biosciences 250, 54-68,2014.
 
 void F(double *xa, double *Fval, double **DF){
   //This evaluates the function we whish to solve using conditional
